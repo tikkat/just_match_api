@@ -13,7 +13,7 @@ gem 'rack-protection', git: 'https://github.com/sinatra/rack-protection' # rails
 
 gem 'active_model_serializers', '~> 0.10' # Serialize models to JSON
 
-gem 'blazer', '~> 1.6' # Explore data with SQL
+# gem 'blazer', '~> 1.6' # Explore data with SQL
 
 # Interact with Frilans Finans API
 gem 'frilans_finans_api', path: 'lib/frilans_finans_api'

@@ -6,10 +6,11 @@ Sidekiq::Web.use Rack::Auth::Basic do |username, password|
 end
 
 Rails.application.routes.draw do
+  ActiveAdmin.routes(self)
   apipie
   get '/', to: redirect('/api_docs')
 
-  mount Blazer::Engine, at: 'insights'
+  # mount Blazer::Engine, at: 'insights'
   mount Sidekiq::Web, at: 'sidekiq'
 
   namespace :api do
