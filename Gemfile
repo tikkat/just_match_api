@@ -49,7 +49,14 @@ gem 'skylight', '~> 0.10' # Performance monitoring
 
 gem 'geocoder', '~> 1.3' # Geocode resources
 
-gem 'administrate', git: 'https://github.com/greetpoint/administrate', branch: 'rails5'
+# ACTIVEADMIN
+gem 'activeadmin', github: 'activeadmin'
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+gem 'ransack',             github: 'activerecord-hackery/ransack'
+gem 'draper',              '> 3.x'
+gem 'sass-rails',          github: 'rails/sass-rails' # For Sprockets 4
+# END ACTIVEADMIN GEMS
+# gem 'administrate', git: 'https://github.com/greetpoint/administrate', branch: 'rails5'
 # gem 'administrate', '~> 0.2' # Admin dashboard
 # gem 'administrate-field-image', '~> 0.0.2' # Administrate image support
 gem 'uglifier', '~> 3.0' # Needed administrate assets compilation
